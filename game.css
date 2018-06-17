@@ -41,10 +41,10 @@ body .task-wrapper .task {
   border: 1px solid whitesmoke;
   background-color: whitesmoke;
   color: #63375e;
-  font-size: 55px;
   line-height: 70px;
   margin: 20px auto;
   user-select: none;
+  font-size: 36px;
 }
 body .task-wrapper .task.correct {
   background-color: #6ec186 !important;
@@ -69,11 +69,11 @@ body .task-wrapper label input {
   height: 40px;
   margin: 10px 98px;
   color: #63375e;
-  font-size: 30px;
   text-align: center;
   text-transform: lowercase;
   border-radius: 7px;
   border: none;
+  font-size: 18px;
 }
 body .task-wrapper label input:active {
   outline: none;

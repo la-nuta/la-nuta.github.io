@@ -3313,10 +3313,11 @@ html body .landing-wrapper section {
   background: no-repeat center bottom;
   margin-top: 60px;
   text-align: center;
+  position: relative;
 }
 html body .landing-wrapper section .anchor {
   position: absolute;
-  top: -30px;
+  top: -60px;
   visibility: hidden;
 }
 html body .landing-wrapper section.main {
