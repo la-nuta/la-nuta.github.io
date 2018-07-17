@@ -1,30 +1,30 @@
 @font-face {
   font-family: "Amatic SC";
-  src: url(assets/fonts/amatic/AmaticSC-Regular.ttf);
+  src: url(assets/fonts/AmaticSC-Regular.ttf);
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Amatic SC Bold";
-  src: url(assets/fonts/amatic/Amatic-Bold.ttf);
+  src: url(assets/fonts/Amatic-Bold.ttf);
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Blackjack";
-  src: url(assets/fonts/blackjack/blackjack.otf);
+  src: url(assets/fonts/blackjack.otf);
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "D-DINCondensed";
-  src: url(assets/fonts/d-din/D-DINCondensed.otf);
+  src: url(assets/fonts/D-DINCondensed.otf);
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "D-DINCondensed Bold";
-  src: url(assets/fonts/d-din/D-DINCondensed-Bold.otf);
+  src: url(assets/fonts/D-DINCondensed-Bold.otf);
   font-weight: 300;
   font-style: normal;
 }
@@ -52,10 +52,10 @@
   vertical-align: -0.0667em;
 }
 .fa-xs {
-  font-size: .75em;
+  font-size: 0.75em;
 }
 .fa-sm {
-  font-size: .875em;
+  font-size: 0.875em;
 }
 .fa-1x {
   font-size: 1em;
@@ -107,9 +107,9 @@
   line-height: inherit;
 }
 .fa-border {
-  border-radius: .1em;
+  border-radius: 0.1em;
   border: solid 0.08em #eee;
-  padding: .2em .25em .15em;
+  padding: 0.2em 0.25em 0.15em;
 }
 .fa-pull-left {
   float: left;
@@ -122,14 +122,14 @@
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 .fa.fa-pull-right,
 .fas.fa-pull-right,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 .fa-spin {
   animation: fa-spin 2s infinite linear;
@@ -3196,8 +3196,8 @@
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-solid-900.eot);
-  src: url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-solid-900.eot?#iefix) format('embedded-opentype'), url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-solid-900.woff2) format('woff2'), url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-solid-900.woff) format('woff'), url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-solid-900.ttf) format('truetype'), url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-solid-900.svg#fontawesome) format('svg');
+  src: url(assets/fonts/fa-solid-900.eot);
+  src: url(assets/fonts/fa-solid-900.eot?#iefix) format('embedded-opentype'), url(assets/fonts/fa-solid-900.woff2) format('woff2'), url(assets/fonts/fa-solid-900.woff) format('woff'), url(assets/fonts/fa-solid-900.ttf) format('truetype'), url(src/screens/home-screen/assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-solid-900.svg#fontawesome) format('svg');
 }
 .fa,
 .fas {
@@ -3212,8 +3212,8 @@
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-brands-400.eot);
-  src: url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-brands-400.eot?#iefix) format('embedded-opentype'), url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-brands-400.woff2) format('woff2'), url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-brands-400.woff) format('woff'), url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-brands-400.ttf) format('truetype'), url(assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-brands-400.svg#fontawesome) format('svg');
+  src: url(assets/fonts/fa-brands-400.eot);
+  src: url(assets/fonts/fa-brands-400.eot?#iefix) format('embedded-opentype'), url(assets/fonts/fa-brands-400.woff2) format('woff2'), url(assets/fonts/fa-brands-400.woff) format('woff'), url(assets/fonts/fa-brands-400.ttf) format('truetype'), url(src/screens/home-screen/assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/webfonts/fa-brands-400.svg#fontawesome) format('svg');
 }
 .fab {
   font-family: 'Font Awesome 5 Brands';
@@ -3226,7 +3226,7 @@ html body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background: rgba(128, 114, 112, 0.5) url(assets/images/bg-landing-pattern.png) repeat center;
+  background: rgba(128, 114, 112, 0.5) url(src/screens/home-screen/assets/images/bg-pattern.png) repeat center;
 }
 html body .landing-wrapper {
   width: 100%;
@@ -3261,7 +3261,7 @@ html body .landing-wrapper header h1 {
   letter-spacing: 1px;
   font-family: "Amatic SC Bold", sans-serif;
   font-size: 40px;
-  background: url(assets/images/magic-effect.png) no-repeat -10px bottom;
+  background: url(src/screens/home-screen/assets/images/magic-effect.png) no-repeat -10px bottom;
 }
 html body .landing-wrapper header h1:hover {
   transform: rotateZ(20deg);
@@ -3321,14 +3321,14 @@ html body .landing-wrapper section .anchor {
   visibility: hidden;
 }
 html body .landing-wrapper section.main {
-  background-image: url(assets/images/bg0.png);
+  background-image: url(src/screens/home-screen/assets/images/bg0.png);
   grid-area: main;
 }
 html body .landing-wrapper section.main .main-internal-wrapper {
   margin: 170px auto 20px;
 }
 html body .landing-wrapper section.about {
-  background-image: url(assets/images/bg1.png);
+  background-image: url(src/screens/home-screen/assets/images/bg1.png);
   grid-area: about;
   display: flex;
   flex-direction: row;
@@ -3353,7 +3353,7 @@ html body .landing-wrapper section.about .about-internal-wrapper span {
   text-shadow: 1px 1px 1px #63375e, -1px -1px 1px #63375e;
 }
 html body .landing-wrapper section.gallery {
-  background-image: url(assets/images/bg2.png);
+  background-image: url(src/screens/home-screen/assets/images/bg2.png);
   grid-area: gallery;
 }
 html body .landing-wrapper section.gallery .game-screenshots {
@@ -3426,10 +3426,10 @@ html body .landing-wrapper footer .social-wrapper .socials {
   text-decoration: none;
 }
 html body .landing-wrapper footer .social-wrapper .socials.fa-pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 html body .landing-wrapper footer .social-wrapper .socials.fa-pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 html body .landing-wrapper footer .social-wrapper .socials.linkedin:before {
   content: "\F08C";

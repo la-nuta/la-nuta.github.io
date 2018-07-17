@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal-dialog</title>
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+          integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <script defer src="modal.js"></script>
+</head>
+<body>
+
+<header class="page-element">
+    <h1>Modal-dialog</h1>
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="#about" rel="section">About</a>
+            </li>
+            <li>
+                <a href="#howToUse" rel="section">How to use</a>
+            </li>
+            <li>
+                <a href="#examples" rel="section">Usage examples</a>
+            </li>
+            <li>
+                <a href="#gameUsage" rel="section">Usage in the game</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<aside>
+    <h3>Features</h3>
+    <p>Reusable component</p>
+    <p>Mouse event</p>
+    <p>Keyboards events</p>
+    <p>Different number of dialogs</p>
+    <p>Different number of phrases</p>
+    <p>Possible to skip the dialog</p>
+</aside>
+<main>
+    <article>
+        <h2 id="about">About modal-dialog component</h2>
+        <p>
+            Modal-dialog component creates dialogs with different content.
+        </p>
+        <p> Phrases in the dialogs are switched by interaction with the button "Next".
+        </p>
+        <p> Click on the button "Next" shows a new phrase.
+        </p>
+        <p> Keyboard key "escape" skips the dialog.
+            Keyboard keys "arrow right", "space" and "enter" also show a new phrase.
+        </p>
+        <p>
+            This component doesn't cover the whole page and doesn't prevent other events on the page.
+        </p>
+        <p>
+            The width of the dialog depends on the width of its wrapper.
+        </p>
+    </article>
+    <article>
+        <h2 id="howToUse">How to use modal-dialog component</h2>
+        <p>
+            Content is defined in phrases.js, that stores the object in the variable "phrases".
+        </p>
+        <p>
+            Different options of dialogs are defined in the object with the structure:
+        </p>
+        <div class="code">
+            <p class="codeLevel1">{</p>
+            <p class="codeLevel2">dialogName1 or dialogsName1 : [</p>
+            <p class="codeLevel3">// Array with dialog phrases or Array of arrays with dialog phrases </p>
+            <p class="codeLevel2"> ],</p>
+            <p class="codeLevel2">dialogName... or dialogsName... : [</p>
+            <p class="codeLevel3">// Array with dialog phrases or Array of arrays with dialog phrases </p>
+            <p class="codeLevel2">],</p>
+            <p class="codeLevel2">dialogNameN or dialogsNameN : [</p>
+            <p class="codeLevel3">// Array with dialog phrases or Array of arrays with dialog phrases </p>
+            <p class="codeLevel2">]</p>
+            <p class="codeLevel1">}</p>
+        </div>
+        <p>So each property of the object in the variable "phrases" contains: the whole dialog (array) with different
+            number of phrases (string)
+            or the group of dialogs with common name (array of arrays of such dialogs).
+        </p>
+
+        <p>If the property contains the group of dialogs the current dialog is chosen at random.
+        </p>
+
+        <p>After showing the last phrase of the current dialog the modal-dialog disappears.
+        </p>
+
+        <p>
+            Example of code to use modal-dialog component:
+        </p>
+        <div class="code">
+            <p>import {ModalDialog} from "'path'/components/modal-dialog";
+            </p>
+            <p>const newDialog = new ModalDialog(wrapper, dialogName/dialogsName);
+            </p>
+            <p class="codeLevel2">// where:
+            </p>
+            <p class="codeLevel2">// 'path' is the path to component's folder;
+            </p>
+            <p class="codeLevel2">// wrapper is a wrapper for dialog;
+            </p>
+            <p class="codeLevel2">// dialogName is a name of a dialog;
+            </p>
+            <p class="codeLevel2">// dialogsName is a name of a group of dialogs.
+            </p>
+        </div>
+    </article>
+    <article>
+        <h2 id="examples">Usage examples of modal-dialog component</h2>
+        <button id="example1" class="example">Example 1: dialog with 6 phrases</button>
+        <div id="modalWrapper1" class="dialog-form-wrapper"></div>
+        <button id="example2" class="example">Example 2: group of 2 dialogs with 2 phrases each</button>
+        <div id="modalWrapper2" class="dialog-form-wrapper"></div>
+        <button id="example3" class="example">Example 3: group of 2 dialogs with 1 phrase each</button>
+        <div id="modalWrapper3" class="dialog-form-wrapper"></div>
+        <button id="example4" class="example">Example 4: dialog with 3 phrases</button>
+        <div id="modalWrapper4" class="dialog-form-wrapper"></div>
+    </article>
+    <article>
+        <h2 id="gameUsage">Usage in the game</h2>
+        <p>
+            In the game 6 examples of dialogs which are divided into 4 groups are realised.
+        </p>
+        <p>
+            To leave possibility to turn off sounds the component doesn't cover the whole page and
+            doesn't prevent other events on the page.
+        </p>
+    </article>
+</main>
+<footer class="page-element">
+    <address id="copyright">&#169; Anna Marfel, 2018</address>
+
+    <ul class="social-wrapper">
+        <li class="one-button">
+            <a class="fab fa-twitter fa-2x" href="https://www.twitter.com" rel="external"
+               target="_blank"></a>
+        </li>
+        <li class="one-button">
+            <a class="fab fa-youtube-square fa-2x" href="https://www.youtube.com" rel="external"
+               target="_blank"></a>
+        </li>
+        <li class="one-button">
+            <a class="fab fa-facebook-f fa-2x" href="https://www.facebook.com" rel="external"
+               target="_blank"></a>
+        </li>
+        <li class="one-button">
+            <a class="fab fa-instagram fa-2x" href="https://www.instagram.com" rel="external"
+               target="_blank"></a>
+        </li>
+        <li class="one-button">
+            <a class="fab fa-github-alt fa-2x" href="https://www.github.com" rel="external"
+               target="_blank"></a>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>
